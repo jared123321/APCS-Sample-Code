@@ -3,11 +3,7 @@ Answers of labs in AP Computer Science class for referencing but rewritten for m
 
 ## WARNING
 This repository is only for debugging purposes. Plagiarism is strongly prohibitted. The creator of this project does not take any responsibility on any consequences of users' inadequate usages.
-<<<<<<< HEAD
-=======
-
 
 ## Little AD
 [LSHeader](https://github.com/LBYPatrick/LSheader)  is a simple tool for writing header/format file name that meets Mr. Patel's demands. It's cross-platform and fast (Written in C++).
 
->>>>>>> a9899f295122a9ee187944a372c2664b8bbdcf70
