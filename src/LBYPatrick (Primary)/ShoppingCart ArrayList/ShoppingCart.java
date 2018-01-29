@@ -77,6 +77,7 @@ public class ShoppingCart
 		contents += "\nItem"+getTabs(4)+"Unit Price"+ getTabs(4)+"Quantity"+getTabs(1)+"Total\n";
 		
 		for (int i = 0; i < itemCount; i++) {
+			lineBuffer = "";
 			lineBuffer += this.cart.get(i).getName();
 			for(int n = 0; n < (NAME_BAR_LENGTH - this.cart.get(i).getName().length()); ++n) {
 				lineBuffer += " ";
