@@ -16,7 +16,7 @@ public class Power
 		Scanner scan = new Scanner(System.in);
 		
 		int base, exp;
-		int answer;
+		double answer;
 
 		System.out.print("Welcome to the power program! ");
 		System.out.println("Please use integers only.");
@@ -42,10 +42,12 @@ public class Power
      *   @return base^exp
      */
      
-     public static int power(int base, int exp)
+     public static double power(double base, double exp)
      {
-		 //if the exponent is 0, set pow to 1	
-		 if(exp == 0) return 1;
-		 else {return power(base,exp-1)*base;}
-     }
+		double returnBuffer = base;
+
+		for(int i = 1; i < Math.abs(exp); ++i) {returnBuffer *= base;}
+
+		return exp == 0 ? 1 : (exp < 0) ? (1/returnBuffer) : returnBuffer;
+	 }
 }
