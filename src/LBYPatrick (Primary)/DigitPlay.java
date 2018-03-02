@@ -34,7 +34,7 @@ public class DigitPlay
 			
 			System.out.println ("\nThe number " + num + " contains " +
 							+ numDigits(num) + " digits.");
-			System.out.println ("And this number " + (numDigits(num)%7 == 0? "is " : "is not ") + "divisible by 7");
+			System.out.println ("And the sum of digits " + (sumDigits(num)%7 == 0? "is " : "is not ") + "divisible by 7");
 		}
     }
 
@@ -50,5 +50,17 @@ public class DigitPlay
 		String tempBuffer = Long.toString(num);
 		if(tempBuffer.contains("-")) {return tempBuffer.length()-1;} 
 		else return tempBuffer.length();
+	}
+
+	public static int sumDigits(int num) {
+		String numBuffer = Integer.toString(num);
+		int returnBuffer = 0;
+
+		for(int i = 0; i < numBuffer.length(); ++i) {
+			returnBuffer += Integer.parseInt(numBuffer.charAt(i) + "");
+		}
+
+		return returnBuffer;
+	
 	}
 }
