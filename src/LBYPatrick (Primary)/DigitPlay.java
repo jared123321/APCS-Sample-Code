@@ -34,7 +34,7 @@ public class DigitPlay
 			
 			System.out.println ("\nThe number " + num + " contains " +
 							+ numDigits(num) + " digits.");
-			System.out.println ();
+			System.out.println ("And this number " + (numDigits(num)%7 == 0? "is " : "is not ") + "divisible by 7");
 		}
     }
 
